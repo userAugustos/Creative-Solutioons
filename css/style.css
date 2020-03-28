@@ -1,0 +1,29 @@
+*{
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+}
+body{
+	font-size: 100%;
+	background-color: #e5e5e5;
+	color: #25282b;
+}
+body img{
+
+}
+main p{
+	font-size: 1.2rem;
+}
+button {
+	color: #ff5e84;
+	border: none;
+	font-weight: bold;
+}
+.idea{
+	color: black;
+	background: #ff5e84;
+}
+.hide{
+	display: none;
+}

@@ -1,0 +1,11 @@
+{
+  "name": "creativeisolation",
+  "version": "1.0.0",
+  "description": "Website para ideias criativas durante a quarentena ",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest "
+  },
+  "author": "Felipe Augustos",
+  "license": "MIT"
+}
