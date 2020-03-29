@@ -1,29 +1,65 @@
 *{
-	box-sizing: border-box;
 }
 a{
 	text-decoration: none;
 }
+
+p{
+	font-size: 1.2rem;
+}
+
 body{
+
+	margin: 0;
 	font-size: 100%;
 	background-color: #e5e5e5;
 	color: #25282b;
 }
-body img{
+body .container{
 
+	margin: 40px auto; /*centralizando o container ao meio da tela sempre*/
+
+	width: 95%; /*Tamanho para a baixo de 980px de tela*/
+	max-width: 980px; /*tamanho maximo, ao atingir tela maior que 980px ele vai continuar centralizado como 980px*/
+
+	display: flex;
 }
-main p{
-	font-size: 1.2rem;
+.container main{
+	margin: 20px /*top*/ 20px /*right*/ 0 /*bottom*/ 0 /*left*/;
 }
+.container #introdction{
+	width: 300px;
+}
+
 button {
+	cursor: pointer;
 	color: #ff5e84;
 	border: none;
 	font-weight: bold;
+	border-radius: 10px;
+
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
 }
-.idea{
+.button-idea{
 	color: black;
 	background: #ff5e84;
 }
+#buttons{
+	display: flex;
+	justify-content: space-around;
+}
+#buttons,footer{
+	margin: 20px auto auto auto;
+	text-align: center;
+}
+
+
+
+
+/*Styles for JS*/
 .hide{
 	display: none;
 }
