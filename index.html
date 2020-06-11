@@ -10,6 +10,8 @@
 
 		<meta name="description" content="WebSite para as suas ideias durante a quarentena">
 		<meta name="author" content="Felipe Augustos">
+		<!--Links-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 
@@ -18,12 +20,12 @@
 	<div class="container">
 		<section id="introdction">
 			<header>
-				<img src="assets/logo.png" alt="Creative Solutions">
+				<img src="assets/logo.png" alt="logo da pagina">
 			</header>
 			
 			<main>
 				<p>Ficar em casa nessa quarentena pode estar sendo um caos para as nossas mentes.</p>
-
+					
 				<p> 
 				Por isso aqui você <strong>pode depositar suas ideias, brincadeiras, dicas</strong> e nós iremos catalogar para todos.</p>
 
@@ -37,13 +39,11 @@
 				<button>+ Adicionar ideia</button> 
 				<button class="button-idea">Ver Ideias</button>
 			</section>
-
 			<footer>
-			Feito por <a href="www.linkedin.com/in/felipe-augustos-a3292b1a1">Augustos</a> com carinho ❤ 
-			</footer>
-
+			Feito por <a href="https://www.linkedin.com/in/felipe-augustos-a3292b1a1">Augustos</a> com carinho ❤ 
+		</footer>
 		</section>
-
+			
 			<section id="last-ideas">
 				<div class="idea">
 
@@ -55,7 +55,7 @@
 						<div class="drescription">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 						</div>
-						<a href="#">Ver a Ideia</a>
+						<a href="">Ver a Ideia</a>
 					</div>
 				</div>
 				<div class="idea">
@@ -66,7 +66,7 @@
 						<h3>Jogar Videogames</h3>
 						<p>Diversão</p>
 						<div class="drescription">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. >
 						</div>
 						<a href="#">Ver a Ideia</a>
 					</div>
@@ -87,7 +87,43 @@
 				</div>
 			</section>
 		</div>
+		
 
+		<!--Modal-->
+
+		<div id="modal">
+			<div class="content">
+
+				<h1>Sua Ideia</h1>
+
+				<form action="" >
+					
+					<div class="input-wrapper">
+						<label for="title">Titulo da Ideia</label>
+						<input type="text" name="title">
+					</div>
+
+					<div class="input-wrapper">
+						<label for="category">Categoria</label>
+						<input type="text" name="category" placeholder="Ex: Esporte, VideoGame, Brincadeira">
+					</div>
+
+					<div class="input-wrapper">
+						<label for="image">Imagem da Ideia</label> <span>Acesse: </span>
+						<input type="url" name="image">						
+					</div>
+
+					<div class="input-wrapper">
+						<label for="description">Descrição</label>
+						<textarea name="description" id="" cols="30" rows="10"></textarea>	
+					</div>
+						
+					<button>Salvar</button>
+				</form>
+			</div>
+		</div>
 </body>
+
 	<script src="js/script.js"></script>
+
 </html>

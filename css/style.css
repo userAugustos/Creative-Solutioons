@@ -1,65 +1,141 @@
+
+/*definições globais*/
+
 *{
+	box-sizing: border-box;
 }
+
 a{
 	text-decoration: none;
 }
-
+h3{
+	margin: 0;
+}
 p{
 	font-size: 1.2rem;
 }
 
 body{
-
+	font-family: 'Roboto', sans-serif;
 	margin: 0;
 	font-size: 100%;
 	background-color: #e5e5e5;
 	color: #25282b;
 }
+
+
+button{
+
+	color: #ff5e84;
+	border: none;
+	font-weight: bold;
+	border-radius: 0.6rem;
+
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+
+	cursor: pointer;
+	outline: none; /*tirando o efeito padrão do navegador para o click*/
+}
+
+button:hover{
+	text-decoration: underline;
+}
+
+	/*Estilizações DOM*/
+
 body .container{
 
-	margin: 40px auto; /*centralizando o container ao meio da tela sempre*/
+	margin: 4% auto; /*centralizando o container ao meio da tela sempre*/
 
 	width: 95%; /*Tamanho para a baixo de 980px de tela*/
 	max-width: 980px; /*tamanho maximo, ao atingir tela maior que 980px ele vai continuar centralizado como 980px*/
 
 	display: flex;
 }
-.container main{
-	margin: 20px /*top*/ 20px /*right*/ 0 /*bottom*/ 0 /*left*/;
+
+
+body .container main{
+	margin: 2.5px /*top*/ 2.5px /*right*/ 0 /*bottom*/ 0 /*left*/;
 }
-.container #introdction{
+body .container #introdction{
 	width: 300px;
+	margin: 0 3% 0 0;
 }
 
-button {
-	cursor: pointer;
-	color: #ff5e84;
-	border: none;
-	font-weight: bold;
-	border-radius: 10px;
-
-	padding-left: 1.3rem;
-	padding-right: 1.3rem;
-	padding-top: 0.6rem;
-	padding-bottom: 0.6rem;
-}
-.button-idea{
-	color: black;
-	background: #ff5e84;
-}
 #buttons{
 	display: flex;
 	justify-content: space-around;
+	margin: 20px auto 20px auto;
 }
-#buttons,footer{
-	margin: 20px auto auto auto;
-	text-align: center;
+footer{
+	margin: 20px auto 20px auto;
 }
 
 
+.button-idea{
+	color: black;
+	background: #ff5e84;
+	box-shadow: -4px 10px 16px rgba(0, 0, 0, 0.3); 
+}
+.button-idea:hover{
+	text-decoration: none;
+}
+section .idea{
+	display: flex;
+	background-color: #FFF;
+	border-radius: 0.8rem;
+	box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 1);
+	padding: 4%;
+	margin-bottom: 5%;
+}
+section .idea img{
+	width: 10%;
+	height: 10%;
+	margin-right: 3%;
+}
+section .idea p{
+ 	margin: 0.5rem 0;
+ 	color:#777; /*Uma especie de cinza suave*/
+}
 
+section .idea .drescription{
+	margin: 1rem 0;
+}
 
-/*Styles for JS*/
+#modal{
+	background: #ff5E84;
+}
+/*Styles para functions no JS*/
+
 .hide{
 	display: none;
+}
+
+/*trabalhando responsividade*/
+
+@media (max-width: 800px) {
+	*{
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		justify-content: center;
+	}
+	.container{
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+	img{
+		max-width: 100%;
+	}
+	.content {
+		display: block;
+		justify-content: center;
+		text-align: center;
+	}
+	footer{
+		margin: auto auto 20px auto;
+	}
 }
